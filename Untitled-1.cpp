@@ -15,6 +15,31 @@ void selectionSort(vector<int>&nums){
     }
 }
 
+// example:
+// [5,3,1,4,2] i=0 mini=0
+// after running inner loop mini will store index of minimum element i.e. mini=2
+// then swap nums[mini] and nums[i]
+// After 1st iteration
+// [1,3,5,4,2] 
+    
+// now i=1 and mini=1;
+// after inner loop mini=4
+// swap arr[i] and arr[mini]
+// [1,2,5,4,3]
+
+// now i=2 and mini=2;
+// after inner loop mini=4;
+// swap arr[i] and arr[mini]
+// [1,2,3,4,5]
+
+// then i=3 and mini=3;
+// after inner loop mini=3;
+// no change;
+
+// now i=4 and mini=4;
+// after inner loop mini=4
+// no change;
+
 
 
 
@@ -28,6 +53,8 @@ void bubbleSort(vector<int>&nums){
         }
     }
 }
+
+
 
 
 
@@ -88,6 +115,12 @@ void mergeSort(vector<int>&nums,int low,int high){
 
 
 
+//take the pivot and place everything smaller to its left and everything larger to its right. After this it means that single element is at its correct position.
+//Now you have to sort the left and right to that element.
+// Eg. [4,6,2,5,7,9,1,3]
+//here correct positon of 4 should be at index 3;
+// [2,1,3,4,6,5,7,9]
+//now see 4 is the partition and then sort left and right of 4
 
 int partition(vector<int>&nums,int low,int high){
     int i=low,j=high;
