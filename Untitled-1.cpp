@@ -119,7 +119,7 @@ void mergeSort(vector<int>&nums,int low,int high){
 //Now you have to sort the left and right to that element.
 // Eg. [4,6,2,5,7,9,1,3]
 //here correct positon of 4 should be at index 3;
-// [2,1,3,4,6,5,7,9]
+// [1,3,2,4,7,9,5,6]
 //now see 4 is the partition and then sort left and right of 4
 
 int partition(vector<int>&nums,int low,int high){
