@@ -15,6 +15,8 @@ void selectionSort(vector<int>&nums){
     }
 }
 
+//Time complexity O(n^2) all cases
+
 // example:
 // [5,3,1,4,2] i=0 mini=0
 // after running inner loop mini will store index of minimum element i.e. mini=2
@@ -54,7 +56,7 @@ void bubbleSort(vector<int>&nums){
     }
 }
 
-
+//Time complexity O(n) O(n^2) O(n^2)
 
 
 
@@ -70,6 +72,7 @@ void insertionSort(vector<int>&nums){
     }
 }
 
+//Time complexity O(n) O(n^2) O(n^2)
 
 
 
@@ -112,6 +115,7 @@ void mergeSort(vector<int>&nums,int low,int high){
     merge(nums,low,mid,high);
 }
 
+//Time complexity O(nlogn) O(nlogn) O(nlogn)
 
 
 
@@ -148,7 +152,7 @@ void quickSort(vector<int>&nums,int low,int high){
     }
 }
 
-
+//Time complexity O(nlogn) O(nlogn) O(n^2)
 
 
 
